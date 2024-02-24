@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 
 mongoose.Promise = global.Promise;
 // database connection
-const dbURI = 'mongodb://localhost:27017/weatherApp';
+const dbURI = process.env.dbURI;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
 .then(() => {
     console.log("Databse Connected Successfully!!");    

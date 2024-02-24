@@ -100,4 +100,9 @@ viewSvg.addEventListener("click", ()=>{
 
 
 
+function goBack() {
+    window.history.back();
+}
+
+
 
